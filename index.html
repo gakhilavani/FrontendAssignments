@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Assignment3</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/assign5.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjTynjSRiXPIDivX8Ey4bclFpoGQGAeh4&callback=initMap">
+    </script>
+    <script src="formvalidation.js"></script>
+    <script src="jquery.validate.min.js"></script>
+	<script>
+		/*$(document).ready(function(){
+    		
+        		$("#form1").validate({
+        			rules: {
+        				fname: {
+        					required:true,
+        					rangelength:[1,40]
+        				},
+        				email: {
+        					required:true,
+        					rangelength:[1,40],
+        					email:true
+        				},
+      					phone: {
+        				required: true,
+        				number: true,
+        				rangelength: [10, 10]
+      					}
+    				},
+    				messages: {
+    						fname:"asdasd",
+    						phone:"Please enter a valid phone number",
+    						email:"sfs"
+    				}
+        		});
+        		$("#send").click(function(){
+        			$("#form1").valid();
+				});
+		});*/
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			<div class="topLeft">
+				<img src="img/livechat.png">
+				<div class="twoTexts">
+					<label>LIVE CHAT</label>
+					<p>We are here to help you</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<div class="topRight">
+				<img src="img/gmail.png">
+				<img src="img/twitter.png">
+				<img src="img/facebook.png">
+				<img src="img/ooo.png">
+				<img src="img/in.png">
+			</div>
+			<div class="topCenter">
+				<ul>
+					<li>LOGIN</li>
+					<li>HELP</li>
+					<li>NEWSLETTER</li> 
+					<li>SIGNUP</li>
+				</ul>
+			</div>
+		</div>
+		<div class="hidden-xs hidden-lg hidden-sm hidden-md searchGlyphicon">
+			<span class="glyphicon glyphicon-th-list pull-right blueIcon"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 headerCol">
+			
+					<div class="header">
+						<div class="innerHeader">
+							<img src="img/logo.png">
+
+							<div class="rightHeader hidden-xs hidden-sm hidden-md">
+							
+								<ul class="nav navbar-nav hidden-xs hidden-sm hidden-md " id="hello">
+									
+									<li><a href="#" >HOME</a></li>
+									<li ><a href="#" >DENTAL TREATMENTS</a></li>
+									<li><a href="#" >SERVICES</a></li>
+									<li ><a href="#" >GALLERY</a></li>
+									<li ><a href="#" >CONTACTS</a></li>
+									<li ><a href="#" >BLOG</a></li>
+
+									
+								</ul>
+								<input type="text" class="inputbox" id="inputBox" placeholder="Search....">
+								<span class="glyphicon glyphicon-search" id="searchBar"></span>
+							</div>
+							<div class="visible-xs hidden-lg visible-sm visible-md glyphiconHeader">
+								<input type="text" class="inputBox1" id="inputBox1" placeholder="Search....">
+								<span class="glyphicon glyphicon-th-list pull-right whiteIcon"></span>
+								<span class="glyphicon glyphicon-search" id="searchBar1"></span>
+							</div>
+						</div>
+					
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="headerImage">
+				<div class="menuHeader hidden-lg" id="menuHeader" >
+					<div class="rightHeader">
+						<ul class="nav navbar-nav" id="hello">	
+							<li><a href="#" >HOME</a></li>
+							<li ><a href="#" id="dentalTreatment">DENTAL TREATMENTS</a></li>
+							<li><a href="#" >SERVICES</a></li>
+							<li ><a href="#" >GALLERY</a></li>
+							<li ><a href="#" >CONTACTS</a></li>
+							<li ><a href="#" >BLOG</a></li>	
+						</ul>		
+					</div>
+				</div>
+				<div class="centerBlue">
+					<div class="firstPart"><img src="img/16.png"><h1>+1 959 603 6035</h1></div>
+					<div class="secondPart">Need professional help?Our support staff will answer your questions.Call us now!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="dentalText">About Dental Clinic</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="dentalGrey">
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+				</div>
+			</div>
+		</div>	
+		<div class="row bottomMargin">
+			<div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
+				<div class="row">
+					<div class="centerWidth">
+						<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+							<div class="symbolStar">
+								<img class="fourImg" src="img/star.png">
+							</div>
+						</div>
+						<div class="col-lg-9 col-sm-12 col-md-9 col-xs-12">
+							<div class="leftText">
+								<div class="ltextHead">
+									PERSPICIATIS UNDE
+								</div>
+								<div class="ltextBody">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+							<img class="fourImg" src="img/star.png">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="centerWidth">
+						<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+							<div class="symbolStar">
+								<img class="fourImg" src="img/car.png">
+							</div>
+						</div>
+						<div class="col-lg-9 col-sm-12 col-md-9 col-xs-12">
+							<div class="leftText">
+								<div class="ltextHead">
+									OMNIS ISTE NATUS
+								</div>
+								<div class="ltextBody">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+								</div>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+							<img class="fourImg" src="img/car.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
+				<div class="row">
+					<div class="centerWidth">
+						<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+							<div class="symbolStar">
+								<img class="fourImg" src="img/microscope.png">
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-xs-12 col-sm-12">
+							<div class="rightText">
+								<div class="rtextHead">
+									VOLUPTATEM ACCUS
+								</div>
+								<div class="rtextBody">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="centerWidth">
+						<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+							<div class="symbolStar">
+								<img class="fourImg" src="img/tooth.png">
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-xs-12 col-sm-12">
+							<div class="rightText">
+								<div class="rtextHead">
+									LAUDANTIUM ,TOTAM
+								</div>
+								<div class="rtextBody">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="greyBack">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="teamText">Our Team</div>	
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="dentalBlack">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+								</div>
+							</div>
+						</div>
+						<div class="row doctorImg">
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="doctorDiv">
+									<img src="img/1.png" >
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="doctorDiv">
+									<img src="img/2.png" >
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="doctorDiv">
+									<img src="img/3.png" >
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="doctorDiv">
+									<img src="img/4.png" >
+								</div>	
+							</div>	
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="darkGreen">
+		<div class="container">
+			<div class="doText">What We Do</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 ">	
+					<div class=" greenDiv">
+						<img src="img/10.png">
+					</div>
+					<div class="vText">
+						<p>VESTIBULUM</p>
+						<p>VESTIBULUM ACCUSA</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
+					<div class=" greenDiv next">
+						<img src="img/11.png">
+					</div>
+					<div class="vText">
+						<p>LIBERO</p>
+						<p>VESTIBULUM ACCUSA</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
+					<div class=" greenDiv">
+						<img src="img/12.png">
+					</div>
+					<div class="vText">
+						<p>PORTA VEL</p>
+						<p>VESTIBULUM ACCUSA</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
+					<div class=" greenDiv">
+						<img src="img/13.png">
+					</div>
+					<div class="vText">
+						<p>VESTIBULUM</p>
+						<p>VESTIBULUM ACCUSA</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="container">
+		<!-- <div class="row">
+			<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> -->
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="dentistText">Our Services</div>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="dentalBlack">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+						</div>
+					</div>
+				</div>
+				<div class="row dentalImg">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+						 <div class="doctorDiv">
+							<img src="img/28.png" class="circle img-circle">
+							<div class="base">
+								<p>QUISQUE</p>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.</p>
+							</div>
+						</div> 
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+						<div class="doctorDiv">
+							<img src="img/23.png" class="circle img-circle">
+							<div class="base">
+								<p>NULLA</p>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+						<div class="doctorDiv">
+							<img src="img/25.png" class="circle img-circle">
+							<div class="base">
+								<p>VESTIBU</p>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+						<div class="doctorDiv">
+							<img src="img/26.png" class="circle img-circle">
+							<div class="base">
+								<p>PORTA VE</p>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.</p>
+							</div>
+						</div>	
+					</div>		
+				<!-- </div>
+			</div> -->
+		</div>
+	</div>
+	<div class="greyBack">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="gallery">Gallery</div>	
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="dentalBlack">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lodauntium ,totam rem aperiam eaque ipsa quae.
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+					<div class="inlineButtons">
+						<button type="button" class="btn btn-outline-primary ">DIAM LORE</button>
+						<button type="button" class="btn btn-outline-primary ">CURSUS</button>
+						<button type="button" class="btn btn-outline-primary ">VEL METU</button>
+						<button type="button" class="btn btn-outline-primary ">DAPIBUS AC</button>
+						<button type="button" class="btn btn-outline-primary ">SCELERISQUE</button>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<img src="img/imggrid.png" class="gridImg">
+			</div>
+		</div>
+	</div>
+	<div class="blueColor">
+		<div class="container">
+			<div class="row marginTop">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+						<img src="img/quotation1.png" class="firstQuote">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+					<div class="quotationText">
+						<img src="img/quotation3.jpg" class="img-circle">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+						<p class="blueText">Gloria Brightman, pallentesque Sed Dolor</p>
+					</div>
+				</div>
+			</div>
+			<div class="row marginBottom">
+				<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+					<img src="img/quotation2.jpg" class="secondQuote" >
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="labelsDiv">
+					<img class="p1" src="img/brulex.png">
+					<img class="p1" src="img/m4.png">
+					<img class="p3" src="img/ele.png">
+					<img class="p1" src="img/stanto.png">
+					<img class="p2" src="img/kintro.png">
+					<img class="p1" src="img/aliquam.png">
+					<img class="p2" src="img/laura.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="greenBackground">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="getStarted">
+					<h3>GET STARTED</h3>
+					<p class="capital">Epsom factorial non deposit quid pro quo hic escorol.
+					olympian quarrels et gorilla congolium.</p>
+					<hr>
+					<p>DONEC EGET TELLUS NON ERAT</p>
+					<div class="line">
+						<p>8901 Marmoda road</p>
+						<p>Glasgow,D04 89GR.</p>
+						<p>Feephone: +1 800 559 6580</p>
+						<p>Telephone: +1 950 603 6035</p>
+						<p>FAX: +1 504 889 9898</p>
+					</div>
+					<p class="mail">E-mail: mail@demolink.org</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="form-upload">
+					<form action="a.html" id="form1" name="form1" onsubmit="return validateEmail();">
+						<input type="text" class="fullWidth" placeholder="Full Name" id="fname" required></input>
+						<input type="text" class="fullWidth" placeholder="Email" id="email" name="email"></input>
+						<input type="text" class="fullWidth" placeholder="Phone" name="phone" id="phone" required></input>
+						<input type="textarea" class="fullArea" id="textArea" placeholder="Message" id="messages"></input>
+						<button type="submit" id="send" >SEND</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12 colmd-12">
+					<div class="innerFooter">
+						Dental Clinic &copy; 2015.All rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="map" style="width:100%;height:500px"></div>	
+</div>
+</body>
+</html>
